@@ -4,6 +4,7 @@ import Workpage from "./pages/Workpage";
 import Aboutpage from "./pages/Aboutpage";
 import Navbar from "./components/Navbar";
 import Contactus from "./pages/Contactus";
+import ServicePage from "./pages/ServicePage";
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
           <Route path="/work" element={<Workpage />} />
           <Route path="/about" element={<Aboutpage />} />
           <Route path="/contact" element={<Contactus />} />
+          <Route path="/services" element={<ServicePage />} />
         </Routes>
       </Router>
     </div>

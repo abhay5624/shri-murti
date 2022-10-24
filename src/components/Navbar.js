@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../Assets/img/3.jpg";
+import Logo from "../Assets/img/3-removebg-preview.png";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -30,6 +30,9 @@ const Navbar = () => {
         <Navlinks>
           <Link to="/contact">Contact</Link>
         </Navlinks>
+        <Navlinks>
+          <Link to="/services">Services</Link>
+        </Navlinks>
       </Flexbox2>
       <Socialmedia>
         <FontAwesomeIcon icon={faLinkedin} className="icon1" />
@@ -37,7 +40,6 @@ const Navbar = () => {
         <FontAwesomeIcon icon={faWhatsapp} className="icon3" />
         <FontAwesomeIcon icon={faTwitterSquare} className="icon4" />
         <FontAwesomeIcon icon={faFacebookSquare} className="icon5" />
-        <FontAwesomeIcon icon={faInstagramSquare} className="icon6" />
       </Socialmedia>
     </Flexbox>
   );
@@ -45,29 +47,40 @@ const Navbar = () => {
 const Logoimg = styled.div`
   padding: 10px;
   img {
-    width: 200px;
+    width: 180px;
   }
 `;
 const Flexbox = styled.div`
 display flex;
-width: 100%
+width: 100%;
+justify-content: space-between;
+position: fixed;
+
+z-index: 99;
+background-color: #1e1e1fb7;
 `;
 const Flexbox2 = styled.div`
-display flex;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
 `;
 const Navlinks = styled.h4`
   padding: 15px 20px;
+  padding-bottom: 0px;
   a {
     font-size: 18px;
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    color: black;
+    font-weight: 400;
+    color: white;
     text-decoration: none;
   }
 `;
 const Socialmedia = styled.div`
   display: flex;
-  font-size: 50px;
+  padding: 40px
+  justify-content: space-around;
+  width: 30%;
+  font-size: 30px;
   svg {
     padding: 20px 20px;
   }
@@ -79,7 +92,6 @@ const Socialmedia = styled.div`
     margin: 22px 22px;
     border-radius: 5px;
     color: #ff0000;
-    background-color: white;
   }
   .icon3 {
     color: #12db12;
