@@ -9,7 +9,6 @@ import {
   faWhatsapp,
   faTwitterSquare,
   faFacebookSquare,
-  faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons";
 const Navbar = () => {
   return (
@@ -24,9 +23,7 @@ const Navbar = () => {
         <Navlinks>
           <Link to="/about">About</Link>
         </Navlinks>
-        <Navlinks>
-          <Link to="/work">Work</Link>
-        </Navlinks>
+
         <Navlinks>
           <Link to="/contact">Contact</Link>
         </Navlinks>
