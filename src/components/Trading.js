@@ -26,18 +26,8 @@ const Traders = styled.div`
   display: flex;
   padding: 80px;
   position: relative;
-  @media screen and (max-width: 992px) {
-    min-height: 100vh;
-    flex-direction: column;
-    .imagebx {
-      display: none;
-    }
-    .shadowbox {
-      width: 55%;
-      top: 0;
-      bottom: 0;
-    }
-  }
+  min-height: fit-content;
+
   .line {
     width: 10vw;
     height: 3px;
@@ -54,13 +44,27 @@ const Traders = styled.div`
     position: absolute;
     bottom: 20%;
     right: 15%;
-    width: 30%;
+    min-width: 30%;
     box-shadow: 5px 5px 10px 8px #888888;
   }
   div {
     img {
       width: 800px;
       height: 400px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    padding: 30px;
+    min-height: 50vh;
+    .imagebx {
+      display: none;
+    }
+    .shadowbox {
+      display: static;
+      left: 30px;
+      min-height: fit-content;
+      width: 65%;
     }
   }
 `;

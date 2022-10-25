@@ -39,19 +39,6 @@ const Introcomponent = () => {
   );
 };
 const Whattodo = styled.div`
-  @media screen and (max-width: 992px) {
-    flex-direction: column;
-    .imagebox {
-      order: 1;
-      width: 100%;
-      img {
-        width: 100%;
-      }
-    }
-    div {
-      order: 2;
-    }
-  }
   display: flex;
   padding: 80px;
   background: rgba(208, 203, 206, 0.1);
@@ -101,6 +88,22 @@ const Whattodo = styled.div`
       border-radius: 3px;
       padding: 0;
       background-color: rgba(12, 114, 158, 1);
+    }
+  }
+  @media screen and (max-width: 992px) {
+    padding: 30px;
+    flex-direction: column;
+    overflow-x: hidden;
+    .imagebox {
+      order: 1;
+      width: 100%;
+      img {
+        width: 80%;
+      }
+    }
+    div {
+      order: 2;
+      width: 70vw;
     }
   }
 `;

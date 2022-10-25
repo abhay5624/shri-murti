@@ -19,11 +19,17 @@ const Footer = () => {
 const Flexbox = styled.div`
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+  }
 `;
 const Footers = styled.div`
   .Linked {
     text-align: center;
     width: 100%;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
   }
   background-color: #001;
   color: white;

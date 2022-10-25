@@ -52,10 +52,7 @@ const Slideshow = () => {
 const Slideshowslide = styled.div`
   width: 100vw;
   height: 100vh;
-  @media screen and (max-width: 992px) {
-    width: 100vw;
-    height: 35vh;
-  }
+
   span {
     font-size: 40px;
     flex-direction: column;
@@ -79,6 +76,14 @@ const Slideshowslide = styled.div`
       background-color: rgba(12, 114, 158, 1);
       color: white;
       border: none;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    width: 100vw;
+    height: 35vh;
+    span {
+      padding-top: 0vh;
+      padding-left: 0vw;
     }
   }
 `;
