@@ -75,6 +75,9 @@ const Flexbox = styled.div`
     img {
       width: 400px;
       height: 400px;
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
     }
   }
   .line {
@@ -86,9 +89,15 @@ const Flexbox = styled.div`
     background-color: rgba(12, 114, 158, 1);
     padding-left: 20px;
   }
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+  }
 `;
 const Services = styled.div`
   padding: 80px;
+  @media screen and (max-width: 992px) {
+    padding: 10px;
+  }
 `;
 const ServiceHead = styled.div`
   height: 300px;

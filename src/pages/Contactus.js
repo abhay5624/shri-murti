@@ -9,7 +9,6 @@ import {
   faWhatsapp,
   faTwitterSquare,
   faFacebookSquare,
-  faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons";
 const Contactus = () => {
   return (
@@ -67,6 +66,13 @@ const AddressBox = styled.div`
   background-color: rgba(12, 114, 158, 1);
   display: flex;
   padding: 90px;
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    padding: 10px;
+    img {
+      width: 100%;
+    }
+  }
 `;
 const Socialmedia = styled.div`
   width: 30%;
@@ -117,12 +123,15 @@ const Formdiv = styled.div`
   padding: 90px;
   textarea {
     width: 64%;
+    @media screen and (max-width: 992px) {
+      width: 78%;
+    }
   }
   label {
     padding: 20px;
     margin: 20px;
     @media screen and (max-width: 992px) {
-      displsy: none;
+      display: none;
     }
   }
   input {
