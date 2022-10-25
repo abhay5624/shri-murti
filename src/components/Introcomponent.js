@@ -39,6 +39,19 @@ const Introcomponent = () => {
   );
 };
 const Whattodo = styled.div`
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    .imagebox {
+      order: 1;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    div {
+      order: 2;
+    }
+  }
   display: flex;
   padding: 80px;
   background: rgba(208, 203, 206, 0.1);

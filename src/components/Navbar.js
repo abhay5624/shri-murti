@@ -52,7 +52,10 @@ display flex;
 width: 100%;
 justify-content: space-between;
 position: fixed;
-
+@media screen and (max-width: 992px){
+  background-color: white;
+  position: static;
+}
 z-index: 99;
 background-color: #1e1e1fb7;
 `;
@@ -64,6 +67,9 @@ const Flexbox2 = styled.div`
 const Navlinks = styled.h4`
   padding: 15px 20px;
   padding-bottom: 0px;
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
   a {
     font-size: 18px;
     font-family: "Poppins", sans-serif;
@@ -78,6 +84,9 @@ const Socialmedia = styled.div`
   justify-content: space-around;
   width: 30%;
   font-size: 30px;
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
   svg {
     padding: 20px 20px;
   }

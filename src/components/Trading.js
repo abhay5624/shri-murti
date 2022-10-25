@@ -26,6 +26,19 @@ const Traders = styled.div`
   display: flex;
   padding: 80px;
   position: relative;
+  @media screen and (max-width: 992px) {
+    min-height: 100vh;
+    flex-direction: column;
+    .imagebx {
+      display: none;
+    }
+    .shadowbox {
+      width: 55%;
+
+      top: 0;
+      bottom: 0;
+    }
+  }
   .line {
     width: 10vw;
     height: 3px;
