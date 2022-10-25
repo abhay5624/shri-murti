@@ -19,7 +19,7 @@ const Aboutpage = () => {
         <div className="line"></div>
       </div>
       <Flexbox>
-        <div>
+        <div className="content">
           <h2> Who we are</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -32,15 +32,15 @@ const Aboutpage = () => {
           <li>Lorem ipsum dolor sit.</li>
           <li>Lorem ipsum dolor sit.</li>
         </div>
-        <div>
+        <div className="bxmg">
           <img src={image2} alt="" />
         </div>
       </Flexbox>
       <Flexbox>
-        <div>
+        <div className="bxmg">
           <img src={image3} alt="" />
         </div>
-        <div>
+        <div className="content">
           <h2> Who we do</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -91,6 +91,9 @@ const Ourteam = styled.div`
   h2 {
     text-align: center;
   }
+  @media screen and (max-width: 992px) {
+    padding-left: 5px;
+  }
 `;
 const Flexbox = styled.div`
   display: flex;
@@ -101,6 +104,16 @@ const Flexbox = styled.div`
     width: 50%;
     img {
       width: 100%;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    padding: 10px;
+    div {
+      width: 80%;
+    }
+    .bxmg {
+      order: 1;
     }
   }
 `;

@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../Assets/img/3-removebg-preview.png";
 import styled from "styled-components";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,35 +11,77 @@ import {
   faTwitterSquare,
   faFacebookSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
+  const [NavShow, setNavShow] = useState(false);
+  const toggleHandler = () => {
+    setNavShow(!NavShow);
+  };
   return (
-    <Flexbox>
-      <Logoimg>
-        <img src={Logo} alt="Logo image" />
-      </Logoimg>
-      <Flexbox2>
-        <Navlinks>
-          <Link to="/">Home</Link>
-        </Navlinks>
-        <Navlinks>
-          <Link to="/about">About</Link>
-        </Navlinks>
+    <>
+      <Flexbox>
+        <Logoimg>
+          <img src={Logo} alt="Logo image" />
+        </Logoimg>
+        <Flexbox2>
+          <Navlinks>
+            <Link to="/">Home</Link>
+          </Navlinks>
+          <Navlinks>
+            <Link to="/about">About</Link>
+          </Navlinks>
 
-        <Navlinks>
-          <Link to="/contact">Contact</Link>
-        </Navlinks>
-        <Navlinks>
-          <Link to="/services">Services</Link>
-        </Navlinks>
-      </Flexbox2>
-      <Socialmedia>
-        <FontAwesomeIcon icon={faLinkedin} className="icon1" />
-        <FontAwesomeIcon icon={faYoutubeSquare} className="icon2" />
-        <FontAwesomeIcon icon={faWhatsapp} className="icon3" />
-        <FontAwesomeIcon icon={faTwitterSquare} className="icon4" />
-        <FontAwesomeIcon icon={faFacebookSquare} className="icon5" />
-      </Socialmedia>
-    </Flexbox>
+          <Navlinks>
+            <Link to="/contact">Contact</Link>
+          </Navlinks>
+          <Navlinks>
+            <Link to="/services">Services</Link>
+          </Navlinks>
+        </Flexbox2>
+        <Socialmedia>
+          <FontAwesomeIcon icon={faLinkedin} className="icon1" />
+          <FontAwesomeIcon icon={faYoutubeSquare} className="icon2" />
+          <FontAwesomeIcon icon={faWhatsapp} className="icon3" />
+          <FontAwesomeIcon icon={faTwitterSquare} className="icon4" />
+          <FontAwesomeIcon icon={faFacebookSquare} className="icon5" />
+        </Socialmedia>
+        <div className="medianav" onClick={() => toggleHandler()}>
+          <FontAwesomeIcon icon={faBars} className="icon5" />
+        </div>
+      </Flexbox>
+      {NavShow && (
+        <MediaLink>
+          <FontAwesomeIcon
+            icon={faX}
+            className="cross"
+            onClick={() => toggleHandler()}
+          />
+          <div className="mediaa">
+            <Link to="/" onClick={() => toggleHandler()}>
+              Home
+            </Link>
+          </div>
+
+          <div className="mediaa">
+            <Link to="/about" onClick={() => toggleHandler()}>
+              About
+            </Link>
+          </div>
+
+          <div className="mediaa">
+            <Link to="/contact" onClick={() => toggleHandler()}>
+              Contact
+            </Link>
+          </div>
+
+          <div className="mediaa">
+            <Link to="/services" onClick={() => toggleHandler()}>
+              Services
+            </Link>
+          </div>
+        </MediaLink>
+      )}
+    </>
   );
 };
 const Logoimg = styled.div`
@@ -47,11 +90,45 @@ const Logoimg = styled.div`
     width: 180px;
   }
 `;
+const MediaLink = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-item: center;
+  background-color: white;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  font-weight: 600;
+  z-index: 99;
+  text-align: center;
+  top: 0;
+  left: 0;
+  a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 30px;
+  }
+  .cross {
+    font-size: 20px;
+  }
+`;
 const Flexbox = styled.div`
 display flex;
 width: 100%;
 justify-content: space-between;
 position: fixed;
+.medianav{
+  font-size: 40px;
+  margin: 50px;
+  display: none;
+  @media screen and (max-width: 992px){
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 992px){
   background-color: white;
   position: static;

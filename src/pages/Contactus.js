@@ -121,6 +121,9 @@ const Formdiv = styled.div`
   label {
     padding: 20px;
     margin: 20px;
+    @media screen and (max-width: 992px) {
+      displsy: none;
+    }
   }
   input {
     width: 60%;

@@ -44,7 +44,7 @@ const Traders = styled.div`
     position: absolute;
     bottom: 20%;
     right: 15%;
-    min-width: 30%;
+    width: 30%;
     box-shadow: 5px 5px 10px 8px #888888;
   }
   div {
