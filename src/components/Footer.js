@@ -5,8 +5,9 @@ const Footer = () => {
   return (
     <Footers>
       <div className="Linked">
-        <Link to="/">Home</Link>|<Link to="/about">About</Link>|
-        <Link to="/work">Work</Link>|<Link to="/services">Services</Link>|
+        <Link to="/">Home</Link>|
+        <Link to="/about">About</Link>|
+       <Link to="/services">Services</Link>|
         <Link to="/contact">Contact Us</Link>
       </div>
       <Flexbox>

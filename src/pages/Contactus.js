@@ -22,21 +22,27 @@ const Contactus = () => {
       <Flexbox>
         <Formdiv>
           <h2>Message us</h2>
-          <form>
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            onSubmit="submit"
+          >
+            <input type="hidden" name="form-name" value="contact" />
             <label>Your Name:</label>
-            <input type="text" placeholder="Enter Your Name" />
+            <input type="text" name="name" placeholder="Enter Your Name" />
             <br />
             <label>Your Email:</label>
-            <input type="email" placeholder="Your Email" />
+            <input type="email" name="email" placeholder="Your Email" />
             <br />
             <label>Your Post :</label>
-            <input type="text" placeholder="Your Position" />
+            <input type="text" name="position" placeholder="Your Position" />
             <br />
             <label>Your Msg :</label>
-            <textarea id="" cols="30" rows="10"></textarea>
+            <textarea id="" cols="30" rows="10" name="message"></textarea>
             <br />
             <br />
-            <input type="submit" value="Submit" />
+            <input type="submit" name="btn" value="Submit" />
           </form>
         </Formdiv>
         <Socialmedia>

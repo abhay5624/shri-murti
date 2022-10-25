@@ -4,6 +4,7 @@ import "react-slideshow-image/dist/styles.css";
 import Slide1 from "../Assets/img/slide3.jpg";
 import Slide2 from "../Assets/img/slide3.webp";
 import Slide3 from "../Assets/img/slide1.jpg";
+import Slide4 from "../Assets/img/kraft-paper-roll.jpg";
 import styled from "styled-components";
 const slideImages = [
   {
@@ -18,6 +19,11 @@ const slideImages = [
   },
   {
     url: Slide3,
+    caption: "Building the future by bringing down the past! ",
+    caption2: "Deconstructing from the ground up to recreate!",
+  },
+  {
+    url: Slide4,
     caption: "Building the future by bringing down the past! ",
     caption2: "Deconstructing from the ground up to recreate!",
   },
