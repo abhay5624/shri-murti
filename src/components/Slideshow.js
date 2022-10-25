@@ -52,6 +52,10 @@ const Slideshow = () => {
 const Slideshowslide = styled.div`
   width: 100vw;
   height: 100vh;
+  @media screen and (max-width: 992px) {
+    width: 100vw;
+    height: 40vh;
+  }
   span {
     font-size: 40px;
     flex-direction: column;
