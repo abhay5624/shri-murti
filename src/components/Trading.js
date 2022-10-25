@@ -34,7 +34,6 @@ const Traders = styled.div`
     }
     .shadowbox {
       width: 55%;
-
       top: 0;
       bottom: 0;
     }

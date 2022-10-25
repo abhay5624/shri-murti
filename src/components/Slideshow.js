@@ -54,7 +54,7 @@ const Slideshowslide = styled.div`
   height: 100vh;
   @media screen and (max-width: 992px) {
     width: 100vw;
-    height: 40vh;
+    height: 35vh;
   }
   span {
     font-size: 40px;
