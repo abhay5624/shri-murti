@@ -15,13 +15,14 @@ const slideImages = [
   },
   {
     url: Slide2,
-    caption: "Rice is our key product ",
-    caption2: "",
-  },
-  {
-    url: Slide3,
     caption: "Building the future by bringing down the past! ",
     caption2: "Deconstructing from the ground up to recreate!",
+  },
+
+  {
+    url: Slide3,
+    caption: "Rice is our key product ",
+    caption2: "",
   },
   {
     url: Slide4,

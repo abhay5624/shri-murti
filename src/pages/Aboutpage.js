@@ -4,8 +4,8 @@ import styled from "styled-components";
 import image2 from "../Assets/img/whoweare.jpg";
 import image3 from "../Assets/img/whatwedo.jpg";
 import Avatar1 from "../Assets/img/person1.jpg";
-import Avatar2 from "../Assets/img/person2.jpg";
-import Avatar3 from "../Assets/img/person3.jpg";
+import Avatar2 from "../Assets/img/person2.jfif";
+import Avatar3 from "../Assets/img/person3.jfif";
 const Aboutpage = () => {
   return (
     <Aboutit>
@@ -93,7 +93,8 @@ const Flexbox = styled.div`
     padding: 50px;
     width: 50%;
     img {
-      width: 100%;
+      width: 350px;
+      height: 400px;
     }
   }
   @media screen and (max-width: 992px) {
