@@ -89,11 +89,18 @@ const Flexbox = styled.div`
   flex-direction: row;
   padding: 50px;
   list-style: none;
+  .member {
+    padding: 25px;
+    img {
+      width: 300px;
+      height: 350px;
+    }
+  }
   div {
     padding: 50px;
     width: 50%;
     img {
-      width: 350px;
+      width: 500px;
       height: 400px;
     }
   }
