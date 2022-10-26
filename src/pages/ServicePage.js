@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "../Assets/img/services.jpg";
-import Image2 from "../Assets/img/paperWaste.jpg";
-import Image3 from "../Assets/img/rice2.jfif";
+import Image2 from "../Assets/img/servicesOcc.jpg";
+import Image3 from "../Assets/img/rice4.jpg";
+import Image4 from "../Assets/img/paperWaste.jpg";
 const ServicePage = () => {
   return (
     <div>
@@ -15,9 +16,8 @@ const ServicePage = () => {
       <Services>
         <h2>Services</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          itaque excepturi sapiente harum maxime asperiores maiores atque
-          delectus doloremque necessitatibus?
+          We are one of the prominent trading company in uttar Pradesh when
+          dealing with paper relating kraft.
         </p>
       </Services>
       <Flexbox
@@ -27,25 +27,22 @@ const ServicePage = () => {
           <h3>Our Mission</h3>
           <div className="line"></div>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Aspernatur, deleniti!
+            One of our main mission is to save tree and environment by trading
+            with recycled paper.
           </p>
         </div>
         <div>
           <h3>Our Vision</h3>
           <div className="line"></div>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Aspernatur, deleniti!
+            our vision is to fulfill our customer needs and become one of the
+            most customer friendly company.
           </p>
         </div>
         <div>
           <h3>Our Speciality</h3>
           <div className="line"></div>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Aspernatur, deleniti!
-          </p>
+          <p>Rice, Occ craft and Kraft paper is our speciality.</p>
         </div>
       </Flexbox>
       <Services>
@@ -53,13 +50,18 @@ const ServicePage = () => {
         <Flexbox>
           <div>
             <img src={Image2} alt="" />
-            <h4>Lorem ipsum</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4>OCC Craft Paper </h4>
+            <p>We also do trading with occ craft paper.</p>
           </div>
           <div>
             <img src={Image3} alt="" />
-            <h4>Lorem ipsum</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4>Rice</h4>
+            <p>One of our main product is rice.</p>
+          </div>
+          <div>
+            <img src={Image4} alt="" />
+            <h4>Kraft Paper</h4>
+            <p>Kraft paper is also our main product</p>
           </div>
         </Flexbox>
       </Services>
@@ -73,8 +75,8 @@ const Flexbox = styled.div`
     padding: 50px;
     text-align: center;
     img {
-      width: 400px;
-      height: 400px;
+      width: 300px;
+      height: 300px;
       @media screen and (max-width: 992px) {
         width: 100%;
       }

@@ -20,6 +20,7 @@ const Introcomponent = () => {
         <li>Rice</li>
         <li>Kraft Paper roll</li>
         <li>Waste Paper</li>
+        <li>Occ Craft</li>
       </div>
       <div className="imagebox">
         <img src={Images} alt="" />

@@ -15,8 +15,7 @@ const Trading = () => {
           We do trade with waste paper, Kraft paper and rice too. we make aur
           customer need our priority. we trade all over north india.
           <br />
-          We protact nature as Kraft paper replacing plastic. Connect with us as
-          protact nature.
+          Occ waste paper is one of our main product to trade.
         </p>
       </div>
     </Traders>

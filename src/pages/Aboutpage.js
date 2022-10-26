@@ -57,27 +57,18 @@ const Aboutpage = () => {
         <Flexbox>
           <div className="member">
             <img src={Avatar1} alt="avatar" />
-            <h3>Member Name</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
-              laboriosam?
-            </p>
+            <h3>Anuj Malik</h3>
+            <h4>Co-Founder</h4>
           </div>
           <div className="member">
             <img src={Avatar2} alt="avatar" />
-            <h3>Member Name</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
-              laboriosam?
-            </p>
+            <h3>Ravi Malik</h3>
+            <h4>Co-Founder</h4>
           </div>
           <div className="member">
             <img src={Avatar3} alt="avatar" />
-            <h3>Member Name</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
-              laboriosam?
-            </p>
+            <h3>Ankit Sharma</h3>
+            <h4>Co-Founder</h4>
           </div>
         </Flexbox>
       </Ourteam>
