@@ -12,11 +12,11 @@ const Trading = () => {
         <h2>Trading</h2>
         <div className="line"></div>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad sit, sunt
-          labore voluptatibus asperiores laboriosam a cumque quod eum
-          repellendus facilis natus, fuga facere! Laboriosam eius quasi, hic nam
-          impedit natus aut perspiciatis sed. Fugit, est sint! Eaque, totam
-          earum!
+          We do trade with waste paper, Kraft paper and rice too. we make aur
+          customer need our priority. we trade all over north india.
+          <br />
+          We protact nature as Kraft paper replacing plastic. Connect with us as
+          protact nature.
         </p>
       </div>
     </Traders>

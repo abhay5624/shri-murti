@@ -6,6 +6,7 @@ import Slide2 from "../Assets/img/slide3.webp";
 import Slide3 from "../Assets/img/slide1.jpg";
 import Slide4 from "../Assets/img/kraft-paper-roll.jpg";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 const slideImages = [
   {
     url: Slide1,
@@ -14,8 +15,8 @@ const slideImages = [
   },
   {
     url: Slide2,
-    caption: "Providing metal of supreme quality ",
-    caption2: "and reliability",
+    caption: "Rice is our key product ",
+    caption2: "",
   },
   {
     url: Slide3,
@@ -24,8 +25,8 @@ const slideImages = [
   },
   {
     url: Slide4,
-    caption: "Building the future by bringing down the past! ",
-    caption2: "Deconstructing from the ground up to recreate!",
+    caption: "Kraft Paper is a options ",
+    caption2: "To save our future",
   },
 ];
 
@@ -45,7 +46,9 @@ const Slideshow = () => {
                 <div>
                   <h4>{slideImage.caption}</h4>
                   <h4>{slideImage.caption2}</h4>
-                  <button>Contact us</button>
+                  <Link to="/contact">
+                    <button>Contact us</button>
+                  </Link>
                 </div>
               </span>
             </Slideshowslide>

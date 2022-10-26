@@ -22,15 +22,13 @@ const Aboutpage = () => {
         <div className="content">
           <h2> Who we are</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dignissimos veritatis eaque iure distinctio! Error earum,
-            accusantium maiores voluptates repudiandae voluptate illum, itaque
-            quasi quia blanditiis vitae dolore cum harum possimus.
+            We are in this business from 2021. It is a Partnership with its
+            office registered in Uttar Pradesh . The company carries out its
+            major operations from Uttar Pradesh Our cofounder are Anuj Malik,
+            Ravi Malik and Ankit Sharma. we are present on many social media
+            like facebook whatsapp and instagram. we are located at House No.2
+            VASUNDHARA RESIDENCY, Uttar Pradesh 251001.
           </p>
-          <li>Lorem ipsum dolor sit.</li>
-          <li>Lorem ipsum dolor sit.</li>
-          <li>Lorem ipsum dolor sit.</li>
-          <li>Lorem ipsum dolor sit.</li>
         </div>
         <div className="bxmg">
           <img src={image2} alt="" />
@@ -41,17 +39,17 @@ const Aboutpage = () => {
           <img src={image3} alt="" />
         </div>
         <div className="content">
-          <h2> Who we do</h2>
+          <h2> What we do</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dignissimos veritatis eaque iure distinctio! Error earum,
-            accusantium maiores voluptates repudiandae voluptate illum, itaque
-            quasi quia blanditiis vitae dolore cum harum possimus.
+            We deal with waste paper and save tree by dealing with them. we
+            trade with rice , waste paper and kraft paper too. kraft paper also
+            save our environment as it can be recycle many time. Our main area
+            of interest lies in Uttar Pradesh.
           </p>
-          <li>Lorem ipsum dolor sit.</li>
-          <li>Lorem ipsum dolor sit.</li>
-          <li>Lorem ipsum dolor sit.</li>
-          <li>Lorem ipsum dolor sit.</li>
+          <li>Our main products are: </li>
+          <li>Rice</li>
+          <li>Kraft Paper roll</li>
+          <li>Waste Paper</li>
         </div>
       </Flexbox>
       <Ourteam>
@@ -99,6 +97,7 @@ const Flexbox = styled.div`
   display: flex;
   flex-direction: row;
   padding: 50px;
+  list-style: none;
   div {
     padding: 50px;
     width: 50%;

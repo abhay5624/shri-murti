@@ -1,6 +1,7 @@
 import React from "react";
 import Images from "../Assets/img/riceimg.jfif";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 const Introcomponent = () => {
   return (
     <Whattodo>
@@ -8,30 +9,27 @@ const Introcomponent = () => {
         <h2>What we do</h2>
         <div className="line"></div>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-          ratione accusamus itaque, necessitatibus impedit est beatae nobis ut
-          ipsum non saepe nesciunt fuga odit repellat omnis, sapiente et ex
-          consequatur ad sequi voluptatibus corrupti. Pariatur sit, sed quod at
-          harum labore exercitationem porro explicabo, ullam eos voluptates
-          eveniet quae quo officiis, atque eum? Nulla, blanditiis dicta deleniti
-          omnis error ab iusto minima sint assumenda non temporibus perspiciatis
-          molestias inventore possimus debitis corporis aspernatur numquam
-          itaque nesciunt ipsam natus in odio iste. Optio unde provident facere
-          dolores rerum, repudiandae iure commodi obcaecati reprehenderit id
-          laboriosam laudantium, esse quod. Aliquam, consequatur doloremque?
+          We are in this business from 2021. We provide Kraft paper and waste
+          paper all over north india. We also provide rice . Our cofounder are
+          Anuj Malik, Ravi Malik and Ankit Sharma. we are present on many social
+          media like facebook whatsapp and instagram. We protact our nature by
+          dealing with waste papers and Kraft paper as kraft paper can be
+          recycle multiple times.
         </p>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Our main products are: </li>
+        <li>Rice</li>
+        <li>Kraft Paper roll</li>
+        <li>Waste Paper</li>
       </div>
       <div className="imagebox">
         <img src={Images} alt="" />
         <span>
           <h4>
-            Lorem ipsum dolor sit, amet consectetur.
+            Learn about us and our founder.
             <br />
-            <button>Read More</button>
+            <Link to="about">
+              <button>Read More</button>
+            </Link>
           </h4>
         </span>
       </div>
