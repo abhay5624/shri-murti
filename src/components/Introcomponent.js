@@ -74,8 +74,7 @@ const Whattodo = styled.div`
       width: 80%;
       height: 450px;
       margin: auto;
-      border: 4px solid black;
-      border-style: dashed;
+
       padding: 10px;
     }
     li {

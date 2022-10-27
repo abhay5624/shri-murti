@@ -3,7 +3,7 @@ import image from "../Assets/img/abouts.jpg";
 import styled from "styled-components";
 import image2 from "../Assets/img/whoweare.jpg";
 import image3 from "../Assets/img/whatwedo.jpg";
-import Avatar1 from "../Assets/img/person1.jpg";
+import Avatar1 from "../Assets/img/person1.jfif";
 import Avatar2 from "../Assets/img/person2.jfif";
 import Avatar3 from "../Assets/img/person3.jfif";
 const Aboutpage = () => {
@@ -56,19 +56,19 @@ const Aboutpage = () => {
         <h2>Our Team</h2>
         <Flexbox>
           <div className="member">
-            <img src={Avatar1} alt="avatar" />
+            <img src={Avatar3} alt="avatar" />
             <h3>Anuj Malik</h3>
             <h4>Co-Founder</h4>
           </div>
           <div className="member">
             <img src={Avatar2} alt="avatar" />
             <h3>Ravi Malik</h3>
-            <h4>Co-Founder</h4>
+            <h4>Partner</h4>
           </div>
           <div className="member">
-            <img src={Avatar3} alt="avatar" />
+            <img src={Avatar1} alt="avatar" />
             <h3>Ankit Sharma</h3>
-            <h4>Co-Founder</h4>
+            <h4>Partner</h4>
           </div>
         </Flexbox>
       </Ourteam>
@@ -96,6 +96,14 @@ const Flexbox = styled.div`
       height: 350px;
     }
   }
+  @media screen and (max-width: 992px) {
+    .member {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
   div {
     padding: 50px;
     width: 50%;
@@ -112,6 +120,9 @@ const Flexbox = styled.div`
     }
     .bxmg {
       order: 1;
+      img {
+        width: 100%;
+      }
     }
   }
 `;

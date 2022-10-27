@@ -70,6 +70,7 @@ const Slideshowslide = styled.div`
     padding-top: 40vh;
     padding-left: 6vw;
     align-item: center;
+
     div {
       color: white;
       width: fit-content;
@@ -77,6 +78,9 @@ const Slideshowslide = styled.div`
       padding: 20px;
     }
     h4 {
+      @media screen and (max-width: 992px) {
+        font-size: 18px;
+      }
       margin: 0;
       padding: 0;
     }
