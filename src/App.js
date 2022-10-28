@@ -6,6 +6,9 @@ import Navbar from "./components/Navbar";
 import Contactus from "./pages/Contactus";
 import ServicePage from "./pages/ServicePage";
 import Footer from "./components/Footer";
+import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 function App() {
   return (
     <div className="App">
@@ -19,9 +22,28 @@ function App() {
           <Route path="/services" element={<ServicePage />} />
         </Routes>
         <Footer />
+        <a href="https://wa.me/918126631053" target="_blank">
+          <WhatsappIcon>
+            <FontAwesomeIcon icon={faWhatsapp} className="icon2" />
+          </WhatsappIcon>
+        </a>
       </Router>
     </div>
   );
 }
-
+const WhatsappIcon = styled.div`
+  position: fixed;
+  background: green;
+  color: white;
+  width: 50px;
+  height: 50px;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 25px;
+  .icon2 {
+    padding-left: 7px;
+    padding-top: 5px;
+    font-size: 40px;
+  }
+`;
 export default App;

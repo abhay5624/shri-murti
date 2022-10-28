@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import image from "../Assets/img/tradimg.jpg";
+import image from "../Assets/img/tradimg.webp";
 
 const Trading = () => {
   return (

@@ -47,9 +47,11 @@ const Aboutpage = () => {
             of interest lies in Uttar Pradesh.
           </p>
           <li>Our main products are: </li>
+          <li>paper waste</li>
+          <li>Imported paper waste</li>
+          <li>Old book waste</li>
+          <li>copy waste paper</li>
           <li>Rice</li>
-          <li>Kraft Paper roll</li>
-          <li>Waste Paper</li>
         </div>
       </Flexbox>
       <Ourteam>
@@ -58,7 +60,7 @@ const Aboutpage = () => {
           <div className="member">
             <img src={Avatar3} alt="avatar" />
             <h3>Anuj Malik</h3>
-            <h4>Co-Founder</h4>
+            <h4>Partner</h4>
           </div>
           <div className="member">
             <img src={Avatar2} alt="avatar" />

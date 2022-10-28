@@ -29,16 +29,16 @@ const Contactus = () => {
             onSubmit="submit"
           >
             <input type="hidden" name="form-name" value="contact" />
-            <label>Your Name:</label>
+
             <input type="text" name="name" placeholder="Enter Your Name" />
             <br />
-            <label>Your Email:</label>
+
             <input type="email" name="email" placeholder="Your Email" />
             <br />
-            <label>Your Post :</label>
+
             <input type="text" name="position" placeholder="Your Position" />
             <br />
-            <label>Your Msg :</label>
+
             <textarea id="" cols="30" rows="10" name="message"></textarea>
             <br />
             <br />
@@ -87,6 +87,12 @@ const Socialmedia = styled.div`
   padding: 60px;
   padding-top:80px;
   font-size: 50px;
+  @media screen and (max-width: 992px) {
+    width: 100%;
+    padding: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .icon1 {
     color: #0077b5;
     padding: 15px;
@@ -123,15 +129,17 @@ const Socialmedia = styled.div`
 const Flexbox = styled.div`
   display: flex;
   width: 100%;
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
 `;
 const Formdiv = styled.div`
   width: 60%;
   padding: 90px;
   textarea {
-    width: 64%;
-    @media screen and (max-width: 992px) {
-      width: 78%;
-    }
+    width: 60%;
+    padding: 10px 20px;
+    margin: 5px;
   }
   label {
     padding: 20px;

@@ -17,7 +17,7 @@ const ServicePage = () => {
         <h2>Services</h2>
         <p>
           We are one of the prominent trading company in uttar Pradesh when
-          dealing with paper relating kraft.
+          dealing with paper waste
         </p>
       </Services>
       <Flexbox
@@ -42,7 +42,10 @@ const ServicePage = () => {
         <div>
           <h3>Our Speciality</h3>
           <div className="line"></div>
-          <p>Rice, Occ craft and Kraft paper is our speciality.</p>
+          <p>
+            paper waste, craft paper , old book waste, copy waste paper and rice
+            is our speciality .
+          </p>
         </div>
       </Flexbox>
       <Services>
@@ -50,8 +53,8 @@ const ServicePage = () => {
         <Flexbox>
           <div>
             <img src={Image2} alt="" />
-            <h4>OCC Craft Paper </h4>
-            <p>We also do trading with occ craft paper.</p>
+            <h4>Imported waste peper </h4>
+            <p>We also do trading with imported waste paper.</p>
           </div>
           <div>
             <img src={Image3} alt="" />

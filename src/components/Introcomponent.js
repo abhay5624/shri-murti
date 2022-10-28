@@ -1,11 +1,12 @@
 import React from "react";
 import Images from "../Assets/img/riceimg.jfif";
 import styled from "styled-components";
+import Imagebox from "./Imagebox";
 import { Link } from "react-router-dom";
 const Introcomponent = () => {
   return (
     <Whattodo>
-      <div>
+      <div className="content">
         <h2>What we do</h2>
         <div className="line"></div>
         <p>
@@ -17,22 +18,14 @@ const Introcomponent = () => {
           recycle multiple times.
         </p>
         <li>Our main products are: </li>
+        <li>paper waste</li>
+        <li>Imported paper waste</li>
+        <li>Old book waste</li>
+        <li>copy waste paper</li>
         <li>Rice</li>
-        <li>Kraft Paper roll</li>
-        <li>Waste Paper</li>
-        <li>Occ Craft</li>
       </div>
       <div className="imagebox">
-        <img src={Images} alt="" />
-        <span>
-          <h4>
-            Learn about us and our founder.
-            <br />
-            <Link to="about">
-              <button>Read More</button>
-            </Link>
-          </h4>
-        </span>
+        <Imagebox />
       </div>
     </Whattodo>
   );
@@ -72,10 +65,12 @@ const Whattodo = styled.div`
     }
     img {
       width: 80%;
-      height: 450px;
+      height: 220px;
       margin: auto;
-
       padding: 10px;
+      @media screen and (max-width: 992px) {
+        padding: 0px;
+      }
     }
     li {
       list-style: none;
@@ -93,15 +88,17 @@ const Whattodo = styled.div`
     flex-direction: column;
     overflow-x: hidden;
     .imagebox {
-      order: 1;
+      order: 2;
       width: 100%;
+      padding: 0px;
       img {
         width: 80%;
+        padding: 0px;
       }
     }
     div {
       order: 2;
-      width: 70vw;
+      width: 100vw;
     }
   }
 `;

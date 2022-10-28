@@ -5,13 +5,11 @@ const Footer = () => {
   return (
     <Footers>
       <div className="Linked">
-        <Link to="/">Home</Link>|
-        <Link to="/about">About</Link>|
-       <Link to="/services">Services</Link>|
+        <Link to="/">Home</Link>|<Link to="/about">About</Link>|
+        <Link to="/services">Services</Link>|
         <Link to="/contact">Contact Us</Link>
       </div>
       <Flexbox>
-        <h3>Copyright © 2022 Shri Murti Devi</h3>
         <h3>Made by: Abhay Kumar Sharma</h3>
       </Flexbox>
     </Footers>
