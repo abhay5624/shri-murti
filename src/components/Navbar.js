@@ -37,6 +37,9 @@ const Navbar = () => {
           <Navlinks>
             <Link to="/services">Services</Link>
           </Navlinks>
+          <Navlinks>
+            <Link to="/order">Order</Link>
+          </Navlinks>
         </Flexbox2>
         <Socialmedia>
           <FontAwesomeIcon icon={faLinkedin} className="icon1" />
@@ -77,6 +80,11 @@ const Navbar = () => {
           <div className="mediaa">
             <Link to="/services" onClick={() => toggleHandler()}>
               Services
+            </Link>
+          </div>
+          <div className="mediaa">
+            <Link to="/order" onClick={() => toggleHandler()}>
+              Order
             </Link>
           </div>
         </MediaLink>

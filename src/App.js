@@ -7,6 +7,7 @@ import Contactus from "./pages/Contactus";
 import ServicePage from "./pages/ServicePage";
 import Footer from "./components/Footer";
 import styled from "styled-components";
+import OrderPage from "./pages/OrderPage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about" element={<Aboutpage />} />
           <Route path="/contact" element={<Contactus />} />
           <Route path="/services" element={<ServicePage />} />
+          <Route path="/order" element={<OrderPage />}/>
         </Routes>
         <Footer />
         <a href="https://wa.me/918126631053" target="_blank">
