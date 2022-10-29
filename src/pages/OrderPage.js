@@ -15,26 +15,36 @@ const OrderPage = () => {
         <h2>Order</h2>
         <div className="flexbox">
           <div className="formbox">
-            <form>
-              <input type="text" placeholder="Enter Your Name" />
+            <form
+              name="order"
+              method="post"
+              data-netlify="true"
+              onSubmit="submit"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <input type="text" name="name" placeholder="Enter Your name" />
               <br />
-              <input type="text" placeholder="Enter Your Address" />
+              <input
+                type="text"
+                name="address"
+                placeholder="Enter Your Address"
+              />
               <br />
               <input
                 type="number"
-                name=""
+                name="phonenumber"
                 id=""
                 placeholder="Enter Your Number"
               />
               <br />
               <input
                 type="email"
-                name=""
+                name="email"
                 id=""
                 placeholder="Enter Your Email"
               />
               <br />
-              <textarea name="" id="" cols="30" rows="10">
+              <textarea name="order" id="" cols="30" rows="10">
                 Enter your Order details
               </textarea>
               <br />
@@ -45,7 +55,7 @@ const OrderPage = () => {
             <h3>Account Holder: Shro Murti Devi Trading Company</h3>
             <h3>Account Number: 50200058539022</h3>
             <h3>IFSC: HDFC0000381</h3>
-            <h3>Branch: Muzzafar Nagar - Uttar Pradesh</h3>
+            <h3>Branch: Muzzaffar Nagar - Uttar Pradesh</h3>
             <h3>Virtual Payment Address: shrimurti@hdfcbank</h3>
           </div>
         </div>

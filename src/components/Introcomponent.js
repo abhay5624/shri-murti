@@ -12,16 +12,15 @@ const Introcomponent = () => {
         <p>
           We are in this business from 2021. We provide Kraft paper and waste
           paper all over north india. We also provide rice . Our cofounder are
-          Anuj Malik, Ravi Malik and Ankit Sharma. we are present on many social
+          Anuj Malik, Ravi Malik and Ankit Sharma. We are present on many social
           media like facebook whatsapp and instagram. We protact our nature by
           dealing with waste papers and Kraft paper as kraft paper can be
           recycle multiple times.
         </p>
         <li>Our main products are: </li>
-        <li>paper waste</li>
-        <li>Imported paper waste</li>
-        <li>Old book waste</li>
-        <li>copy waste paper</li>
+        <li>paper waste old book, copy & Kraft</li>
+        <li>Finished Kraft Paper on rells</li>
+        <li>Imported Waste paper</li>
         <li>Rice</li>
       </div>
       <div className="imagebox">

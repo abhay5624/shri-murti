@@ -3,7 +3,8 @@ import styled from "styled-components";
 import Image from "../Assets/img/services.jpg";
 import Image2 from "../Assets/img/servicesOcc.jpg";
 import Image3 from "../Assets/img/rice4.jpg";
-import Image4 from "../Assets/img/paperWaste.jpg";
+import Image4 from "../Assets/img/kraft-paper-roll.jpeg";
+import Image5 from "../Assets/img/old-books.jpg";
 const ServicePage = () => {
   return (
     <div>
@@ -35,7 +36,7 @@ const ServicePage = () => {
           <h3>Our Vision</h3>
           <div className="line"></div>
           <p>
-            our vision is to fulfill our customer needs and become one of the
+            Our vision is to fulfill our customer needs and become one of the
             most customer friendly company.
           </p>
         </div>
@@ -43,14 +44,24 @@ const ServicePage = () => {
           <h3>Our Speciality</h3>
           <div className="line"></div>
           <p>
-            paper waste, craft paper , old book waste, copy waste paper and rice
+            Paper Waste, Craft Paper ,Old Book Waste, Copy Waste Paper and Rice
             is our speciality .
           </p>
         </div>
       </Flexbox>
       <Services>
         <h2>Our Product</h2>
-        <Flexbox>
+        <Flexbox style={{ flexWrap: "wrap" }}>
+          <div>
+            <img src={Image5} alt="" />
+            <h4>Paper Waste ,old book,& kraft </h4>
+            <p>We trade old books and waste paper.</p>
+          </div>
+          <div>
+            <img src={Image4} alt="" />
+            <h4>Finished Kraft Paper in rells</h4>
+            <p>Kraft paper is also our main product</p>
+          </div>
           <div>
             <img src={Image2} alt="" />
             <h4>Imported waste peper </h4>
@@ -61,11 +72,6 @@ const ServicePage = () => {
             <h4>Rice</h4>
             <p>One of our main product is rice.</p>
           </div>
-          <div>
-            <img src={Image4} alt="" />
-            <h4>Kraft Paper</h4>
-            <p>Kraft paper is also our main product</p>
-          </div>
         </Flexbox>
       </Services>
     </div>
@@ -74,8 +80,9 @@ const ServicePage = () => {
 const Flexbox = styled.div`
   width: 100%;
   display: flex;
+
   div {
-    padding: 50px;
+    padding: 30px;
     text-align: center;
     img {
       width: 300px;

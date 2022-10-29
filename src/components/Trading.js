@@ -12,10 +12,11 @@ const Trading = () => {
         <h2>Trading</h2>
         <div className="line"></div>
         <p>
-          We do trade with waste paper, Kraft paper and rice too. we make aur
+          We do trade with Paper waste old book, old copy and Kraft. we make our
           customer need our priority. we trade all over north india.
           <br />
-          Occ waste paper is one of our main product to trade.
+          We also trade with Finished Kraft Paper in rolls, Imported waste Paper
+          and rice too.
         </p>
       </div>
     </Traders>

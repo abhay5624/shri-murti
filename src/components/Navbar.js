@@ -95,7 +95,7 @@ const Navbar = () => {
 const Logoimg = styled.div`
   padding: 10px;
   img {
-    width: 180px;
+    width: 140px;
   }
 `;
 const MediaLink = styled.div`
