@@ -7,15 +7,22 @@ const Introcomponent = () => {
   return (
     <Whattodo>
       <div className="content">
-        <h2>What we do</h2>
-        <h3>Business:</h3>
+        <h2>Business</h2>
         <div className="line"></div>
         <p>
-        We are in the business since 2021 and provide the solution related to paper waste to Paper Manufacturing units through trading of Paper Waste i.e Old & used Books, Copies, Kraft paper & other qualities of Waste Paper in Uttar Pradesh & Uttaranchal. Recycling of paper waste save the nature as it can be recycled multiple times. We also deal with the best quality of Rice.
+          We are in the business since 2021 and provide the solution related to
+          paper waste to Paper Manufacturing units through trading of Paper
+          Waste i.e Old & used Books, Copies, Kraft paper & other qualities of
+          Waste Paper in Uttar Pradesh & Uttaranchal. Recycling of paper waste
+          save the nature as it can be recycled multiple times. We also deal
+          with the best quality of Rice.
         </p>
         <p>We fulfil our customer requirement on priority.</p>
         <h3>Our Products: </h3>
-        <li> Paper Waste i.e.Old & used Books, Copies, Kraft Paper & others </li>
+        <li>
+          {" "}
+          Paper Waste i.e.Old & used Books, Copies, Kraft Paper & others{" "}
+        </li>
         <li>Finished Kraft Paper</li>
         <li>Imported Waste paper</li>
         <li>Rice</li>

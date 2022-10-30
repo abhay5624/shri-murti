@@ -41,9 +41,7 @@ const Aboutpage = () => {
           <img src={image3} alt="" />
         </div>
         <div className="content">
-          <h2>What we do</h2>
-          <h3>Business:</h3>
-
+          <h2>Business</h2>
           <p>
             We are in the business since 2021 and provide the solution related
             to paper waste to Paper Manufacturing units through trading of Paper
