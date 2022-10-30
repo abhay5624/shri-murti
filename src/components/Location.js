@@ -8,7 +8,7 @@ const Location = () => {
       <div className="flexbox">
         <div className="content">
           <h4>SHRI MURTI DEVI TRADING COMPANY</h4>
-          <h4>BUIDING NO.2 VASUNDHARA RESIDENCY</h4>
+          <h4>BUILDING NO.2 VASUNDHARA RESIDENCY</h4>
           <h4>MUZAFFARNAGAR-251001,568811</h4>
           <h4>UTTAR PRADESH INDIA</h4>
         </div>

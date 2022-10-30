@@ -66,7 +66,17 @@ const Contactus = () => {
       </Flexbox>
       <ContactInfo>
         <h4> Contact No.: +91-9997032478, +91-8126631053, +91-9310070808</h4>
-        <h4> Email-Id: info@shrimurtidevi.com, smdtc@rediffmail.com</h4>
+        <h4>
+          <Flexbox>
+            {" "}
+            Email-Id:{" "}
+            <div>
+              &nbsp; info@shrimurtidevi.com,
+              <br />
+              &nbsp; smdtc@rediffmail.com
+            </div>
+          </Flexbox>
+        </h4>
         <h4> WhatsApp : +91-8126631053</h4>
       </ContactInfo>
       <AddressBox>
@@ -90,6 +100,7 @@ const AddressBox = styled.div`
   color: white;
   background-color: rgba(12, 114, 158, 1);
   display: flex;
+  text-transform: uppercase;
   padding: 90px;
   @media screen and (max-width: 992px) {
     flex-direction: column;

@@ -36,37 +36,13 @@ const Aboutpage = () => {
           <img src={image2} alt="" />
         </div>
       </Flexbox>
-      <Flexbox>
-        <div className="bxmg">
-          <img src={image3} alt="" />
-        </div>
-        <div className="content">
-          <h2>Business</h2>
-          <p>
-            We are in the business since 2021 and provide the solution related
-            to paper waste to Paper Manufacturing units through trading of Paper
-            Waste i.e Old & used Books, Copies, Kraft paper & other qualities of
-            Waste Paper in Uttar Pradesh & Uttaranchal. Recycling of paper waste
-            save the nature as it can be recycled multiple times. We also deal
-            with the best quality of Rice.
-          </p>
-          <p>We fulfil our customer requirement on priority.</p>
-          <h3>Our Products: </h3>
-          <li>
-            Paper Waste i.e.Old & used Books, Copies, Kraft Paper & others
-          </li>
-          <li>Finished Kraft Paper</li>
-          <li>Imported Waste paper</li>
-          <li>Rice</li>
-        </div>
-      </Flexbox>
+
       <Ourteam>
-        <h2>Our Team</h2>
         <Flexbox>
           <div className="member">
             <img src={Avatar3} alt="avatar" />
             <h3>Anuj Malik</h3>
-            <h4>Partner</h4>
+            <h4>Founder</h4>
             <p>
               Mr. Anuj Malik, is a well-qualified person and have more than15Yrs
               experience in Finance, Accounts & Trading.
@@ -75,7 +51,7 @@ const Aboutpage = () => {
           <div className="member">
             <img src={Avatar1} alt="avatar" />
             <h3>Ankit Sharma</h3>
-            <h4>Partner</h4>
+            <h4>Co-Founder</h4>
             <p>
               Mr. Ankit Sharma, is a well-qualified person and have more
               than18Yrs experience in Trading Business
@@ -84,7 +60,7 @@ const Aboutpage = () => {
           <div className="member">
             <img src={Avatar2} alt="avatar" />
             <h3>Ravi Malik</h3>
-            <h4>Partner</h4>
+            <h4>Co-Founder</h4>
             <p>
               Mr. Ravi Malik, latterly join the company as a partner and have
               more than10Yrs experience in Logistics Business.
