@@ -20,7 +20,7 @@ const Aboutpage = () => {
         <div className="line"></div>
       </div>
       <Flexbox>
-        <div className="content">
+        <div className="content" style={{ width: "80%" }}>
           <h2>INTRODUCTION:</h2>
           <p>
             Our organisation was established in April-2021 and founded by Mr.
@@ -31,9 +31,6 @@ const Aboutpage = () => {
             long time in the same field. Our founders have good co-ordination
             with Paper Manufactures, Stockists and Logistics.
           </p>
-        </div>
-        <div className="bxmg">
-          <img src={image2} alt="" />
         </div>
       </Flexbox>
 
