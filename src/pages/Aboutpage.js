@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../Assets/img/abouts.jpg";
 import styled from "styled-components";
+import Location from "../components/Location";
 import image2 from "../Assets/img/whoweare.jpg";
 import image3 from "../Assets/img/whatwedo.jpg";
 import Avatar1 from "../Assets/img/person1.jfif";
@@ -20,14 +21,15 @@ const Aboutpage = () => {
       </div>
       <Flexbox>
         <div className="content">
-          <h2> Who we are</h2>
+          <h2>INTRODUCTION:</h2>
           <p>
-            We are in this business from 2021. It is a Partnership with its
-            office registered in Uttar Pradesh . The company carries out its
-            major operations from Uttar Pradesh Our cofounder are Anuj Malik,
-            Ravi Malik and Ankit Sharma. we are present on many social media
-            like facebook whatsapp and instagram. we are located at House No.2
-            VASUNDHARA RESIDENCY, Uttar Pradesh 251001.
+            Our organisation was established in April-2021 and founded by Mr.
+            Anuj Malik (Founder) and Mr. Ankit Sharma (Co-founder) in Uttar
+            Pradesh, India. The company carries out its operations from its
+            registered office setup in Muzaffarnagar, Uttar Pradesh. Our founder
+            has the experience in the trading of Waste & Finished Paper from a
+            long time in the same field. Our founders have good co-ordination
+            with Paper Manufactures, Stockists and Logistics.
           </p>
         </div>
         <div className="bxmg">
@@ -39,18 +41,24 @@ const Aboutpage = () => {
           <img src={image3} alt="" />
         </div>
         <div className="content">
-          <h2> What we do</h2>
+          <h2>What we do</h2>
+          <h3>Business:</h3>
+
           <p>
-            We deal with waste paper and save tree by dealing with them. we
-            trade with rice , waste paper and kraft paper too. kraft paper also
-            save our environment as it can be recycle many time. Our main area
-            of interest lies in Uttar Pradesh.
+            We are in the business since 2021 and provide the solution related
+            to paper waste to Paper Manufacturing units through trading of Paper
+            Waste i.e Old & used Books, Copies, Kraft paper & other qualities of
+            Waste Paper in Uttar Pradesh & Uttaranchal. Recycling of paper waste
+            save the nature as it can be recycled multiple times. We also deal
+            with the best quality of Rice.
           </p>
-          <li>Our main products are: </li>
-          <li>paper waste</li>
-          <li>Imported paper waste</li>
-          <li>Old book waste</li>
-          <li>copy waste paper</li>
+          <p>We fulfil our customer requirement on priority.</p>
+          <h3>Our Products: </h3>
+          <li>
+            Paper Waste i.e.Old & used Books, Copies, Kraft Paper & others
+          </li>
+          <li>Finished Kraft Paper</li>
+          <li>Imported Waste paper</li>
           <li>Rice</li>
         </div>
       </Flexbox>
@@ -61,19 +69,32 @@ const Aboutpage = () => {
             <img src={Avatar3} alt="avatar" />
             <h3>Anuj Malik</h3>
             <h4>Partner</h4>
-          </div>
-          <div className="member">
-            <img src={Avatar2} alt="avatar" />
-            <h3>Ravi Malik</h3>
-            <h4>Partner</h4>
+            <p>
+              Mr. Anuj Malik, is a well-qualified person and have more than15Yrs
+              experience in Finance, Accounts & Trading.
+            </p>
           </div>
           <div className="member">
             <img src={Avatar1} alt="avatar" />
             <h3>Ankit Sharma</h3>
             <h4>Partner</h4>
+            <p>
+              Mr. Ankit Sharma, is a well-qualified person and have more
+              than18Yrs experience in Trading Business
+            </p>
+          </div>
+          <div className="member">
+            <img src={Avatar2} alt="avatar" />
+            <h3>Ravi Malik</h3>
+            <h4>Partner</h4>
+            <p>
+              Mr. Ravi Malik, latterly join the company as a partner and have
+              more than10Yrs experience in Logistics Business.
+            </p>
           </div>
         </Flexbox>
       </Ourteam>
+      <Location />
     </Aboutit>
   );
 };

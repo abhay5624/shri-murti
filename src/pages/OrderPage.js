@@ -52,7 +52,7 @@ const OrderPage = () => {
             </form>
           </div>
           <div className="paymentId">
-            <h3>Account Holder: Shro Murti Devi Trading Company</h3>
+            <h3>Account Holder: SHRI MURTI DEVI TRADING COMPANY</h3>
             <h3>Account Number: 50200058539022</h3>
             <h3>IFSC: HDFC0000381</h3>
             <h3>Branch: Muzzaffar Nagar - Uttar Pradesh</h3>

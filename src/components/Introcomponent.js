@@ -8,18 +8,15 @@ const Introcomponent = () => {
     <Whattodo>
       <div className="content">
         <h2>What we do</h2>
+        <h3>Business:</h3>
         <div className="line"></div>
         <p>
-          We are in this business from 2021. We provide Kraft paper and waste
-          paper all over north india. We also provide rice . Our cofounder are
-          Anuj Malik, Ravi Malik and Ankit Sharma. We are present on many social
-          media like facebook whatsapp and instagram. We protact our nature by
-          dealing with waste papers and Kraft paper as kraft paper can be
-          recycle multiple times.
+        We are in the business since 2021 and provide the solution related to paper waste to Paper Manufacturing units through trading of Paper Waste i.e Old & used Books, Copies, Kraft paper & other qualities of Waste Paper in Uttar Pradesh & Uttaranchal. Recycling of paper waste save the nature as it can be recycled multiple times. We also deal with the best quality of Rice.
         </p>
-        <li>Our main products are: </li>
-        <li>paper waste old book, copy & Kraft</li>
-        <li>Finished Kraft Paper on rells</li>
+        <p>We fulfil our customer requirement on priority.</p>
+        <h3>Our Products: </h3>
+        <li> Paper Waste i.e.Old & used Books, Copies, Kraft Paper & others </li>
+        <li>Finished Kraft Paper</li>
         <li>Imported Waste paper</li>
         <li>Rice</li>
       </div>

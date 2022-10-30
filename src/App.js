@@ -21,14 +21,9 @@ function App() {
           <Route path="/about" element={<Aboutpage />} />
           <Route path="/contact" element={<Contactus />} />
           <Route path="/services" element={<ServicePage />} />
-          <Route path="/order" element={<OrderPage />}/>
+          <Route path="/order" element={<OrderPage />} />
         </Routes>
         <Footer />
-        <a href="https://wa.me/918126631053" target="_blank">
-          <WhatsappIcon>
-            <FontAwesomeIcon icon={faWhatsapp} className="icon2" />
-          </WhatsappIcon>
-        </a>
       </Router>
     </div>
   );

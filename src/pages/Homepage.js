@@ -7,7 +7,6 @@ const Homepage = () => {
     <div>
       <Slideshow />
       <Introcomponent />
-      <Trading />
     </div>
   );
 };

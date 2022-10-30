@@ -17,9 +17,30 @@ const ServicePage = () => {
       <Services>
         <h2>Services</h2>
         <p>
-          We are one of the prominent trading company in uttar Pradesh when
-          dealing with paper waste
+          We are one of the prominent trading company in Uttar Pradesh dealing
+          in Paper Waste
         </p>
+      </Services>
+      <Services>
+        <h2>Our Product</h2>
+        <Flexbox style={{ flexWrap: "wrap" }}>
+          <div>
+            <img src={Image5} alt="" />
+            <h4>Paper Waste ,old book,& kraft </h4>
+          </div>
+          <div>
+            <img src={Image4} alt="" />
+            <h4>Finished Kraft Paper in reels</h4>
+          </div>
+          <div>
+            <img src={Image2} alt="" />
+            <h4>Imported Waste Paper-OCC, DSOCC etc </h4>
+          </div>
+          <div>
+            <img src={Image3} alt="" />
+            <h4>Best Quality Rice</h4>
+          </div>
+        </Flexbox>
       </Services>
       <Flexbox
         style={{ backgroundColor: "rgba(12, 114, 158, 1)", color: "white" }}
@@ -28,8 +49,8 @@ const ServicePage = () => {
           <h3>Our Mission</h3>
           <div className="line"></div>
           <p>
-            One of our main mission is to save tree and environment by trading
-            with recycled paper.
+            Our mission to save Tree and Environment by supplying the Recycled
+            Paper.
           </p>
         </div>
         <div>
@@ -43,37 +64,10 @@ const ServicePage = () => {
         <div>
           <h3>Our Speciality</h3>
           <div className="line"></div>
-          <p>
-            Paper Waste, Craft Paper ,Old Book Waste, Copy Waste Paper and Rice
-            is our speciality .
-          </p>
+          <p>Paper Waste – Old & used Books, Copies, Kraft and other grades </p>
+          <p>Rice- Best Qualities like Basmati, Brown Long Rice etc.</p>
         </div>
       </Flexbox>
-      <Services>
-        <h2>Our Product</h2>
-        <Flexbox style={{ flexWrap: "wrap" }}>
-          <div>
-            <img src={Image5} alt="" />
-            <h4>Paper Waste ,old book,& kraft </h4>
-            <p>We trade old books and waste paper.</p>
-          </div>
-          <div>
-            <img src={Image4} alt="" />
-            <h4>Finished Kraft Paper in rells</h4>
-            <p>Kraft paper is also our main product</p>
-          </div>
-          <div>
-            <img src={Image2} alt="" />
-            <h4>Imported waste peper </h4>
-            <p>We also do trading with imported waste paper.</p>
-          </div>
-          <div>
-            <img src={Image3} alt="" />
-            <h4>Rice</h4>
-            <p>One of our main product is rice.</p>
-          </div>
-        </Flexbox>
-      </Services>
     </div>
   );
 };
@@ -106,7 +100,8 @@ const Flexbox = styled.div`
   }
 `;
 const Services = styled.div`
-  padding: 80px;
+  padding: 20px;
+  padding-left: 80px;
   @media screen and (max-width: 992px) {
     padding: 10px;
   }

@@ -19,6 +19,7 @@ const Contactus = () => {
         <h2>Home / Contact us</h2>
         <div className="line"></div>
       </ContactHeader>
+
       <Flexbox>
         <Formdiv>
           <h2>Message us</h2>
@@ -36,27 +37,42 @@ const Contactus = () => {
             <input type="email" name="email" placeholder="Your Email" />
             <br />
 
-            <input type="text" name="position" placeholder="Your Position" />
+            <input
+              type="text"
+              name="position"
+              placeholder="Contact/Mobile No"
+            />
             <br />
 
-            <textarea id="" cols="30" rows="10" name="message"></textarea>
+            <textarea id="" cols="30" rows="10" name="message">
+              Comments
+            </textarea>
             <br />
             <br />
             <input type="submit" name="btn" value="Submit" />
           </form>
         </Formdiv>
         <Socialmedia>
-          <FontAwesomeIcon icon={faLinkedin} className="icon1" />
-          <FontAwesomeIcon icon={faYoutubeSquare} className="icon2" />
-          <FontAwesomeIcon icon={faWhatsapp} className="icon3" />
-          <FontAwesomeIcon icon={faTwitterSquare} className="icon4" />
-          <FontAwesomeIcon icon={faFacebookSquare} className="icon5" />
+          <a href="https://wa.me/918126631053" target="_blank">
+            <FontAwesomeIcon icon={faWhatsapp} className="icon3" />
+          </a>
+          <a href="#">
+            <FontAwesomeIcon icon={faTwitterSquare} className="icon4" />
+          </a>
+          <a href="#">
+            <FontAwesomeIcon icon={faFacebookSquare} className="icon5" />
+          </a>
         </Socialmedia>
       </Flexbox>
+      <ContactInfo>
+        <h4> Contact No.: +91-9997032478, +91-8126631053, +91-9310070808</h4>
+        <h4> Email-Id: info@shrimurtidevi.com, smdtc@rediffmail.com</h4>
+        <h4> WhatsApp : +91-8126631053</h4>
+      </ContactInfo>
       <AddressBox>
         <div>
           <h2>Location</h2>
-          <p>House No.2 VASUNDHARA RESIDENCY, Uttar Pradesh 251001</p>
+          <p>Building No.2, VASUNDHARA RESIDENCY, Uttar Pradesh 251001</p>
         </div>
         <div>
           <a href="https://www.google.com/maps/place/29%C2%B026'48.5%22N+77%C2%B042'48.0%22E/@29.4468022,77.7111348,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xfecbb2293a93abb4!8m2!3d29.4468022!4d77.7133235?hl=en">
@@ -67,6 +83,9 @@ const Contactus = () => {
     </div>
   );
 };
+const ContactInfo = styled.div`
+  padding: 20px;
+`;
 const AddressBox = styled.div`
   color: white;
   background-color: rgba(12, 114, 158, 1);
@@ -92,6 +111,7 @@ const Socialmedia = styled.div`
     padding: 0px;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   .icon1 {
     color: #0077b5;
@@ -106,6 +126,7 @@ const Socialmedia = styled.div`
   .icon3 {
     color: #12db12;
     padding: 15px;
+    align-item: center;
   }
   .icon4 {
     color: #1da1f2;

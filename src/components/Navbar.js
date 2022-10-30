@@ -42,9 +42,9 @@ const Navbar = () => {
           </Navlinks>
         </Flexbox2>
         <Socialmedia>
-          <FontAwesomeIcon icon={faLinkedin} className="icon1" />
-          <FontAwesomeIcon icon={faYoutubeSquare} className="icon2" />
-          <FontAwesomeIcon icon={faWhatsapp} className="icon3" />
+          <a href="https://wa.me/918126631053" target="_blank">
+            <FontAwesomeIcon icon={faWhatsapp} className="icon3" />
+          </a>
           <FontAwesomeIcon icon={faTwitterSquare} className="icon4" />
           <FontAwesomeIcon icon={faFacebookSquare} className="icon5" />
         </Socialmedia>
