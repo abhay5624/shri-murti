@@ -18,7 +18,7 @@ const Footers = styled.div`
     text-align: center;
     width: 100%;
     @media screen and (max-width: 992px) {
-      font-size: 13px;
+      font-size: 12px;
     }
   }
   background-color: #001;
