@@ -107,6 +107,9 @@ const Orderstyle = styled.div`
       h3 {
         font-weight: 400;
       }
+      @media screen and (max-width: 992px) {
+        width: 80%;
+      }
     }
   }
   .form {
