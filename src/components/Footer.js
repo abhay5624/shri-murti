@@ -17,12 +17,16 @@ const Footers = styled.div`
   .Linked {
     text-align: center;
     width: 100%;
+    @media screen and (max-width: 992px) {
+      font-size: 14px;
+    }
   }
   background-color: #001;
   color: white;
   padding: 30px;
   padding-top: 100px;
   padding-bottom: 100px;
+
   a {
     margin: auto;
     padding: 20px;

@@ -68,18 +68,7 @@ const Orderstyle = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
-    @media screen and (max-width: 992px) {
-      display: block;
-      .paymentId {
-        width: 80%;
-      }
-      .formbox {
-        width: 80%;
-      }
-      h3 {
-        font-size: 12px;
-      }
-    }
+
     .formbox {
       width: 60%;
       input {
@@ -127,6 +116,18 @@ const Orderstyle = styled.div`
       color: white;
       top: 200px;
       left: 50px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    display: block;
+    .paymentId {
+      width: 80%;
+    }
+    .formbox {
+      width: 80%;
+    }
+    h3 {
+      font-size: 12px;
     }
   }
 `;
