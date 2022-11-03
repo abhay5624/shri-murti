@@ -77,7 +77,7 @@ const Orderstyle = styled.div`
         width: 80%;
       }
       h3 {
-        font-size: 16px;
+        font-size: 12px;
       }
     }
     .formbox {

@@ -20,7 +20,7 @@ const Aboutpage = () => {
         <div className="line"></div>
       </div>
       <Flexbox>
-        <div className="content" style={{ width: "80%" }}>
+        <div className="content" style={{ width: "80%4" }}>
           <h2>INTRODUCTION:</h2>
           <p>
             Our organisation was established in April-2021 and founded by Mr.
@@ -33,7 +33,6 @@ const Aboutpage = () => {
           </p>
         </div>
       </Flexbox>
-
       <Ourteam>
         <Flexbox>
           <div className="member">

@@ -9,26 +9,14 @@ const Footer = () => {
         <Link to="/services">Services</Link>|
         <Link to="/contact">Contact Us</Link>
       </div>
-      <Flexbox>
-        <h3>Made by: Abhay Kumar Sharma</h3>
-      </Flexbox>
     </Footers>
   );
 };
-const Flexbox = styled.div`
-  display: flex;
-  justify-content: space-between;
-  @media screen and (max-width: 992px) {
-    flex-direction: column;
-  }
-`;
+
 const Footers = styled.div`
   .Linked {
     text-align: center;
     width: 100%;
-    @media screen and (max-width: 992px) {
-      display: none;
-    }
   }
   background-color: #001;
   color: white;

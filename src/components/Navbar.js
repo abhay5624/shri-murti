@@ -58,6 +58,7 @@ const Navbar = () => {
             icon={faX}
             className="cross"
             onClick={() => toggleHandler()}
+            style={{ padding: "40px" }}
           />
           <div className="mediaa">
             <Link to="/" onClick={() => toggleHandler()}>
@@ -101,7 +102,6 @@ const Logoimg = styled.div`
 const MediaLink = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-item: center;
   background-color: white;
   min-width: 100vw;
@@ -112,6 +112,9 @@ const MediaLink = styled.div`
   text-align: center;
   top: 0;
   left: 0;
+  .mediaa {
+    padding: 40px;
+  }
   a {
     color: black;
     text-decoration: none;

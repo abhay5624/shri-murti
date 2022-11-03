@@ -19,8 +19,7 @@ const Introcomponent = () => {
         </p>
         <p>We fulfil our customer requirement on priority.</p>
         <h3>Our Products: </h3>
-        <li>
-          {" "}
+        <li style={{ paddingRight: "70px" }}>
           Paper Waste i.e.Old & used Books, Copies, Kraft Paper & others{" "}
         </li>
         <li>Finished Kraft Paper</li>
@@ -37,6 +36,13 @@ const Whattodo = styled.div`
   display: flex;
   padding: 80px;
   background: rgba(208, 203, 206, 0.1);
+  .content {
+    @media screen and (max-width: 992px) {
+      p {
+        padding-right: 70px;
+      }
+    }
+  }
   .imagebox {
     position: relative;
   }
